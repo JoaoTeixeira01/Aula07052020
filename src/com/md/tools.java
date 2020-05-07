@@ -27,7 +27,7 @@ public class tools
 	}
 	public static class NumeroDias
 	{
-		public int devolveNumDias(int mes,int ano)
+		public static int devolveNumDias(int mes,int ano)
 		{
 			int numDiasMes;
 			int[] meses31 = {1,3,5,7,8,10,12};
@@ -56,7 +56,7 @@ public class tools
 			return numDiasMes;
 		}
 		
-		private boolean bissexto(int ano)
+		private static boolean bissexto(int ano)
 		{
 			// ano divisivel por 4 -> bissexto
 			// ano divisivel por 4 e por 100 -> ñ bissexto
@@ -90,7 +90,7 @@ public class tools
 			}
 		}
 		
-		private boolean divisivel(int ano, int divisor)
+		private static boolean divisivel(int ano, int divisor)
 		{
 			int restoDivisaoInteira = ano % divisor;
 			if(restoDivisaoInteira == 0)
@@ -100,7 +100,7 @@ public class tools
 			return false;
 		}
 		
-		private boolean mesInArray(int mes, int[]arrayMeses)
+		private static boolean mesInArray(int mes, int[]arrayMeses)
 		{
 			for(int c=0; c<arrayMeses.length; c++)
 			{

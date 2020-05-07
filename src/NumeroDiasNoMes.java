@@ -12,7 +12,10 @@ public class NumeroDiasNoMes
 		String data = scanner.nextLine();
 		
 		dataObject dataObj = new dataObject(data);
+		
+		int numDias = NumeroDias.devolveNumDias(dataObj.getMes(), dataObj.getAno());
 
+		System.out.println(numDias);
 	}
 
 }
